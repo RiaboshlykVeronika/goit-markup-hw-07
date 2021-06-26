@@ -1,0 +1,21 @@
+.principles-list__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+ .principles-list__item:not(:last-child){
+     margin-right: 30px;
+ }
+ 
+ .principles-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-background-color);
+    margin-bottom: 30px;
+    padding: 25px 25px;
+    border-radius: 4px;
+}
