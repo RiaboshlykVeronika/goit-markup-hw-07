@@ -1,21 +1,37 @@
+ .principles-list {
+@media screen and (min-width: 768px) {
+    display:flex;
+    flex-wrap: wrap;}
+}
+    // display: flex;}
+
 .principles-list__title {
     color: var(--title-text-color);
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+       }
 }
- .principles-list__item:not(:last-child){
-     margin-right: 30px;
- }
+.principles-list__item {
+    width: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+     flex-basis: calc((100% - 60px) / 2);
+     margin-left: 15px;
+    }
+}
  
  .principles-list__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--grey-background-color);
-    margin-bottom: 30px;
     padding: 25px 25px;
     border-radius: 4px;
 }

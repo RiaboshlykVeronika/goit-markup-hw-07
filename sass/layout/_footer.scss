@@ -6,6 +6,7 @@
     }
 
 .footer-item {
+    font-style: normal;
     margin-top: 9px;
 }
 
@@ -22,7 +23,7 @@
 .footer-list {
     display: flex;
     justify-content: center;
-    &-item:not(:last-child) { 
+    &__item:not(:last-child) { 
         margin-right: 10px;
     }
 }

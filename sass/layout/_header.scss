@@ -9,7 +9,7 @@
 
 .site-nav {
     display: flex;
-&-item:not(:last-child) {
+&__item:not(:last-child) {
   margin-right: 50px;
 }
 }
@@ -18,7 +18,7 @@
     display: flex;
     margin-left: auto;
     align-items: center;
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
       margin-right: 50px;
   }
 }
@@ -38,10 +38,10 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   overflow: hidden;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-    color: var(--accent-color);
- }
+    color: var(--accent-color);}
+}
 
 .contact-list__link {
   color: var(--primary-text-color);
@@ -52,13 +52,11 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-    color: var(--accent-color); 
-}
-
-.contact-list__icon:hover &, .contact-list__icon:focus & {
-  fill: var(--accent-color);
+    color: var(--accent-color);}
+  &:hover .contact-list__icon, &:focus .contact-list__icon {
+  fill: var(--accent-color);}
 }
 
 .site-nav__link--current {
