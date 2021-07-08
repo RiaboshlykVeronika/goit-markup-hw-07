@@ -1,7 +1,12 @@
 .hero-section {
     text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media screen and (min-width: 1200px) {
     padding-top: 200px;
-    padding-bottom: 200px;}
+    padding-bottom: 200px;
+      }
+    }
 
 .hero-section__title {
     margin-top: 0;
@@ -11,10 +16,13 @@
 .hero-section__title {
     color: var(--primary-white-color);
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+      }
 }
 .overlay {
     max-width: 1600px;

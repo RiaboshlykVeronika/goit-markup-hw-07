@@ -1,7 +1,9 @@
       
 .work-section {
-    display: none;
-    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    padding-top: 0;}
+    
     &__item {
         position: relative;}
      &__item:not(:last-child) {

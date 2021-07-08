@@ -1,3 +1,9 @@
+.clients-list {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
 
 .clients-item {
     display: flex;
@@ -16,7 +22,21 @@
     }
 }
 
-.clients-list__link:not(:last-child) {
-    margin-right: 30px;
+.clients-list__link {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 90px) / 3); 
+        width: 226px;
+    } 
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 180px) / 6); 
+        width: 170px; 
+    }
 }
 
+// .clients-list__link:not(:last-child) {
+//     margin-right: 30px;
+// }
