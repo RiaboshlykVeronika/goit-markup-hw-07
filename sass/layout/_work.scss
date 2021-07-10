@@ -1,14 +1,20 @@
       
 .work-section {
+    padding-top: 0;
     @media screen and (max-width: 1199px) {
         display: none;
-    padding-top: 0;}
+    }
     
     &__item {
         position: relative;}
      &__item:not(:last-child) {
         margin-right: 30px;
     }
+}
+
+.work-section__list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .work-section__title {

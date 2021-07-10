@@ -10,7 +10,14 @@
     padding: 40px;
     &-form {
       display: flex;
-      flex-direction: column;}
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+    width: 450px;}
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
 
   .modal-form__title  {
       font-weight: 700;
